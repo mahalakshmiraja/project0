@@ -1,0 +1,108 @@
+
+$color: #262626;
+
+div {
+      color: $color;
+      p {
+          color: $color;
+      }
+      ol {
+          color: $color;
+      }
+      ul {
+          font-weight:bold;
+          color: $color;
+      }
+  }
+
+
+h2{
+    background-color: #ffe6e6;
+}
+
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+%fontStyle{
+    font-family: "Helevatica", sans-serif;
+}
+
+.ex1{
+    @extend %fontStyle;
+    padding:5px;
+    text-align : justify;
+}
+
+p{
+    @extend %fontStyle;
+     padding:5px;
+}
+
+#firstlist{
+    @extend %fontStyle;
+    padding-left:60px;
+    text-align : justify;
+    font-size: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e6ffe6;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #b3d9ff;
+}
+
+
+
+table, th,td{
+    @extend %fontStyle;
+    margin-left: 40px;
+    padding:5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+a {
+    color: #111;
+}
+
+span{
+    @extend %fontStyle;
+    padding:5px;
+    text-align : justify;
+}
+
+
+
+@media screen and (min-width: 500px) {
+    body{
+    background-color: lavender;
+}
+}
+
+@media screen and (min-width: 800px) {
+    body{
+    background-color: #fff;
+}
+}
